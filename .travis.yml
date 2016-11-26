@@ -1,8 +1,7 @@
 language: go
-deploy:
-  skip_cleanup: true
 script: go build -ldflags="-s -w" brightness.go
 deploy:
+  skip_cleanup: true
   provider: releases
   api_key:
     secure: vtDiLq/+DT7QAq80Vwo1xK4kXWgpH0bY6Lpq5nm4qC10Gub3pqRW7VpJNgPjNWS7Wy0FPrb5z+j6FZPHyuGIn4WUoljr/T9V/jm9jWcIWwmVEHNPm5jLrtyKXQVR32f8m+8YOuwcJp6xMSIEOVUWyocxlZozu1jnctSEsCzFiHv3SBAxBVf2ESI9zzzY5KEOX+bimI6d6oPR8ymzHjPJEyG3C19682sYGZJTV+Ppx2FFq/srI+97cYjgNBZ1M471uveHKWbR6oHsppmylR4mXBL8TDJBgtAA7Ts2MP5yGPLp9foQOLZRxf0J15H3/l2/brAQ9p6cWFPVgZ6iUaD9eeD8iP1arud+ZTCOHQkaIzSa4ltpXR3A73JlDnF4wYwWdpq9HWejZQv6luEvkFix0BBrraKVLyAkHHg+4S/m6eWm517QB3ZNVK+EP1u2Y4VtmZwC2XTDcksw3/Ax3pDZbGjWD5J4kHN/APF3JjBs8tSLCzt02wOgu6f6q0zLRjBvB++ZdAsOz2MIZJNcZRj6XjJJk5xWI6T+z00NZZxsFG+5O+0TCYmHrBVm7TTrPKUfJ6mTKdPFI8QDvW31n80FV6vfEEdkGh6NXIxsPZ+5yUgajM2lq9gbH5F1H71IZF50BejS3CbLGpiUT09N091ZVb/TgygGOzoI0oXCI4+MD00=
