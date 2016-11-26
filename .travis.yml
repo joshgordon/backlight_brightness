@@ -8,3 +8,4 @@ deploy:
   file: brightness
   on:
     repo: joshgordon/backlight_brightness
+    tags: true
