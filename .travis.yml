@@ -1,7 +1,7 @@
 language: go
-script: go build -ldflags="-s -w" brightness.go
 deploy:
   skip_cleanup: true
+script: go build -ldflags="-s -w" brightness.go
 deploy:
   provider: releases
   api_key:
