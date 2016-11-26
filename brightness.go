@@ -11,7 +11,6 @@ func readInt(file *os.File) (number int, err error) {
 	// Array to store the data in...
 	data := make([]byte, 100)
 
-
 	bytesRead, err := file.Read(data)
 	if err != nil {
 		return 0, err
@@ -20,7 +19,6 @@ func readInt(file *os.File) (number int, err error) {
 	number, err = strconv.Atoi(string(data[:bytesRead-1]))
 	return number, err
 }
-
 
 func main() {
 	// Filename to read/write brightness from
@@ -60,10 +58,10 @@ func main() {
 	if os.Args[1] == "up" {
 		brightness = int(float64(brightness)*factor + 1)
 		if brightness > max {
-			brightness = max 
+			brightness = max
 		}
 	} else if os.Args[1] == "down" {
-		brightness = int(float64(brightness)/factor)
+		brightness = int(float64(brightness) / factor)
 		if brightness < min {
 			brightness = min
 		}
